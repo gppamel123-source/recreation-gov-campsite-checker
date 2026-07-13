@@ -20,6 +20,6 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
           python camping.py --start-date 2026-07-18 --end-date 2026-07-19 --parks 232447 232449 232450 | python notify_ntfy.py
-          python camping.py --start-date 2026-07-19 --end-date 2026-07-20 --parks 232447 232449 232450 232452 | python notify_ntfy.py
+          python camping.py --start-date 2026-07-19 --end-date 2026-07-20 --parks 232447 232449 232450 | python notify_ntfy.py
           python camping.py --start-date 2026-07-20 --end-date 2026-07-21 --parks 232447 232449 232450 | python notify_ntfy.py
           python camping.py --start-date 2026-07-21 --end-date 2026-07-22 --parks 232447 232449 232450 | python notify_ntfy.py
