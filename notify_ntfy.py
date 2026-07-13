@@ -3,7 +3,7 @@ import sys
 
 import requests
 
-NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "gp-mine-yosemite-alert-g1p2")
+NTFY_TOPIC = os.environ.get("NTFY_TOPIC") or "gp-mine-yosemite-alert-g1p2"
 SUCCESS_EMOJI = "🏕"
 
 def main():
